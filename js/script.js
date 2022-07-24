@@ -2,9 +2,6 @@ let input = prompt("Enter a number below to find out if it is ODD or EVEN:");
             
             input = parseInt(input);
 
-            
-                
-           
             function printOddEven(){
                
                 if(input % 2 == 0){
