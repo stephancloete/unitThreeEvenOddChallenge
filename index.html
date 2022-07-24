@@ -7,6 +7,31 @@
     </head>
 
     <body>
+        <h1>Odd or Even</h1>
 
-        <script src="js/script.js" defer></script>
+        <h2>The number you entered is:</h2>
+
+        <h1 id="answer"></h1>
+        
+        <!--<script src="js/script.js" defer></script>-->
+        <script>
+
+           
+            let input = prompt("Enter a number below to find out if it is ODD or EVEN:");
+            
+            input = parseInt(input); 
+
+            function printOddEven(){
+               
+                if(input % 2 == 0){
+                    document.getElementById("answer").innerHTML = "Even";
+                }else{
+                    document.getElementById("answer").innerHTML = "Odd";
+                }
+           }
+
+           printOddEven();
+
+
+        </script>
     </body>
